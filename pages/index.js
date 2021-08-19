@@ -30,15 +30,21 @@ export default function Home({ posts }) {
             {`Welcome to my website. I used to do software engineering at `}
             <Link href="https://www.freelancer.com" passHref={true}>
               Freelancer
-            </Link>{' '}
-            {`but now I enjoy doing product at 🚀 `}
+            </Link>
+            {'. '}
+            {`Now I enjoy doing product at `}
             <Link href="https://www.spacehip.com.au" passHref={true}>
               Spaceship
             </Link>
-            {'. I’m always keen to chat, you can find me on '}
-            <Link href="https://www.linkedin.com/in/umerf1/" passHref={true}>
-              Linkedin
-            </Link>
+            {' 🚀'}
+
+            <p>
+              {'I’m always keen to chat, you can find me on '}
+              <Link href="https://www.linkedin.com/in/umerf1/" passHref={true}>
+                Linkedin
+              </Link>
+              {'.'}
+            </p>
           </h2>
         </div>
 
