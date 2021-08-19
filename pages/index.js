@@ -18,15 +18,39 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+        <div className="pt-6">
+          <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            Hi{' '}
+            <span role="img" aria-label="wave">
+              👋
+            </span>{' '}
+            , I’m Umer Farooq
+          </h1>
+          <h2 className="mb-16 text-lg prose text-gray-600 dark:text-gray-400">
+            {`Welcome to my website. I used to do software engineering at `}
+            <Link href="https://www.freelancer.com" passHref={true}>
+              Freelancer
+            </Link>{' '}
+            {`but now I enjoy doing product at 🚀 `}
+            <Link href="https://www.spacehip.com.au" passHref={true}>
+              Spaceship
+            </Link>
+            {'. I’m always keen to chat, you can find me on '}
+            <Link href="https://www.linkedin.com/in/umerf1/" passHref={true}>
+              Linkedin
+            </Link>
+          </h2>
+        </div>
+
+        {/* <div className="pt-6 pb-8 space-y-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
-        </div>
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+        </div> */}
+        {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
@@ -76,9 +100,9 @@ export default function Home({ posts }) {
               </li>
             )
           })}
-        </ul>
+        </ul> */}
       </div>
-      {posts.length > MAX_DISPLAY && (
+      {/* {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
@@ -88,7 +112,7 @@ export default function Home({ posts }) {
             All Posts &rarr;
           </Link>
         </div>
-      )}
+      )} */}
     </>
   )
 }
