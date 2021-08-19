@@ -17,7 +17,11 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
+          <Link href="https://www.diamondhands.com.au">
+            <span role="img" aria-label="diamond hands">
+              💎 🤲
+            </span>
+          </Link>
         </div>
       </div>
     </footer>
