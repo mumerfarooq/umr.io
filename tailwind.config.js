@@ -31,6 +31,9 @@ module.exports = {
           white: '#fff',
         },
       },
+      listStyleType: {
+        arabic: 'arabic-indic',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {

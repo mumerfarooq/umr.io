@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-      <Analytics />
+      {/* <Analytics /> */}
       <LayoutWrapper>
         <Component {...pageProps} />
       </LayoutWrapper>
