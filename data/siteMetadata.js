@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Welcome',
+  title: 'Home',
   author: 'Umer Farooq',
   headerTitle: 'Umer Farooq',
   description: 'umr.io',
