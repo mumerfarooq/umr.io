@@ -28,21 +28,15 @@ export default function Home({ posts }) {
           </h1>
           <h2 className="mb-16 text-lg prose text-gray-600 dark:text-gray-400">
             {`Welcome to my website. I used to do software engineering at `}
-            <Link href="https://www.freelancer.com" passHref={true}>
-              Freelancer
-            </Link>
+            <Link href="https://www.freelancer.com">Freelancer</Link>
             {'. '}
             {`Now I enjoy doing product at `}
-            <Link href="https://www.spacehip.com.au" passHref={true}>
-              Spaceship
-            </Link>
+            <Link href="https://www.spacehip.com.au">Spaceship</Link>
             {' 🚀'}
 
             <p>
               {'I’m always keen to chat, you can find me on '}
-              <Link href="https://www.linkedin.com/in/umerf1/" passHref={true}>
-                Linkedin
-              </Link>
+              <Link href="https://www.linkedin.com/in/umerf1/">Linkedin</Link>
               {'.'}
             </p>
           </h2>
