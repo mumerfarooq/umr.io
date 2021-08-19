@@ -29,8 +29,7 @@ export default function Home({ posts }) {
           <h2 className="mb-16 text-lg prose text-gray-600 dark:text-gray-400">
             {`Welcome to my website. I used to do software engineering at `}
             <Link href="https://www.freelancer.com">Freelancer</Link>
-            {'. '}
-            {`Now I enjoy doing product at `}
+            {`. Now I enjoy doing product at `}
             <Link href="https://www.spacehip.com.au">Spaceship</Link>
             {' 🚀'}
 
