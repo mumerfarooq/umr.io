@@ -5,8 +5,10 @@ import Image from './Image'
 import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
+import Canva from './Canva'
 
 export const MDXComponents = {
+  Canva,
   Image,
   TOCInline,
   a: CustomLink,
