@@ -27,17 +27,7 @@ export default function Home({ posts }) {
             , I’m Umer Farooq
           </h1>
           <h2 className="mb-16 text-lg prose text-gray-600 dark:text-gray-400">
-            {`Welcome to my website. I used to do software engineering at `}
-            <Link href="https://www.freelancer.com">Freelancer</Link>
-            {`. Now I enjoy doing product at `}
-            <Link href="https://www.spacehip.com.au">Spaceship</Link>
-            {' 🚀'}
-
-            <p>
-              {'I’m always keen to chat, you can find me on '}
-              <Link href="https://www.linkedin.com/in/umerf1/">Linkedin</Link>
-              {'.'}
-            </p>
+            {`Welcome to my home on the internet.`}
           </h2>
         </div>
 
