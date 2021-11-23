@@ -13,6 +13,6 @@ Hi 👋 , my name is Umer Farooq.
 
 I used to enjoy doing software engineering at <a href="https://www.freelancer.com">Freelancer.com</a>. These days I am passionate about doing product management at <a href="https://www.spacehip.com.au">Spaceship</a> 🚀.
 
-In the last year, I have started two businesses as side projects. One being <a href="https://www.helpsavelocals.com">HelpSaveLocals.com</a> which was a marketplace to help local businesses affected by the pandemic through customers buying coupons and vouchers. The other was <a href="https://carsnflights.com/">CarsnFlights.com</a> -- a car rental website.
+As side ventures, I created two enterprises in the last year. One example was <a href="https://www.helpsavelocals.com">HelpSaveLocals.com</a> which was a marketplace where shoppers could buy discounts and vouchers to aid local businesses harmed by the pandemic. The other website was <a href="https://carsnflights.com/">CarsnFlights.com</a> which is a car rental service.
 
-I'm always keen to chat, you can find me on <a href="https://www.linkedin.com/in/umerf1">Linkedin</a>.
+I'm always happy to talk and connect, you can find me on <a href="https://www.linkedin.com/in/umerf1">Linkedin</a>.
