@@ -63,11 +63,9 @@ Below are my top learnings from the masterpiece.
 ### TLDR
 
 - Figure out your differentiating leverage. Things which you are good at and double down.
-- Identify your challenges.
+- Focus on the diagnosis of the situation aka identify your challenges.
 - OKR is an strategy-alignment exercise, not a strategy-creation activity.
-- Bad strategy can be detected if it's riddled with fluff words or disguised as a goal or looks like it came from template.
-- Focus on the diagnosis of the situation.
 - Strategy is the [How](https://twitter.com/shreyas/status/1460848932116844550?s=20) **NOT** the What.
 - More dynamic the situation the more simple objective needs to be.
-- Strategy is mostly about saying NO. Avoid dog's dinner.
+- Strategy is mostly about saying NO.
 - Don't know where to start? Start with a list. **FOCUS**.
