@@ -1,6 +1,6 @@
 ---
 title: Strategy is NOT X
-date: '2022-01-13'
+date: '2022-03-13'
 tags: ['strategy', 'books', 'review']
 draft: false
 summary: Things I learnt from reading Good/Bad Strategy.
@@ -34,36 +34,22 @@ and then Robinhood's S1
 
 > As our customers grow their wealth, we believe they will continue to expand their relationship with our platform, providing an increased opportunity to meet their growing financial needs.
 
-They both have almost the same vision. WellsFargo is a bank and wants to remain relevant and Robinhood wants to be bank where the distribution channel of their products is their mobile app.
+They both have almost the same vision. WellsFargo is a bank and wants to remain relevant and Robinhood wants to be bank where the differentiation is the distribution channel of the Robinhood products, which is their mobile app.
 
-### Best way to smell bad strategy is look for fluff words.
+### What does good strategy look like?
 
-### 7) underperformance shouldnt be stated as a challenge.
+Honestly, I am not sure, but it starts with self reflection, which is hard. It is easier to describe a competitor startegy rather than yours. May be it comes from the fact that for human beings, it is easier to recognise how the other entity is different compared to the self reflection need to understand what makes you different.
 
-### 2) It's easier to describe competitor strategy rather than yours
+Good strategy can come from the process of identifying your strengths, challenges you face and mostly saying NO to different pathways.
 
-### 16) strategy is not a crank winding exercise like product DVF, etc
-
-### 3) Strategy is mostly about saying no.
-
-    - try to avoid dog's dinner.
-
-### 6) A good strategy always identifies the challenges.
-
-### 9) focus on diagnosis
-
-### 11) more dynamic the situation the more simple objective needs to be.
-
-To my surprise, I enjoyed reading [Good Strategy/Bad Strategy: The Difference and Why It Matters](https://www.amazon.com.au/Good-Strategy-Bad-Difference-Matters/dp/0307886239).
-
-Below are my top learnings from the masterpiece.
-
-### TLDR
+### TLDR - Summary
 
 - Figure out your differentiating leverage. Things which you are good at and double down.
 - Focus on the diagnosis of the situation aka identify your challenges.
 - OKR is an strategy-alignment exercise, not a strategy-creation activity.
+- Avoid crank winding exercises like product DVF to set strategy.
 - Strategy is the [How](https://twitter.com/shreyas/status/1460848932116844550?s=20) **NOT** the What.
 - More dynamic the situation the more simple objective needs to be.
 - Strategy is mostly about saying NO.
+- Focus on diagnosis of the situation.
 - Don't know where to start? Start with a list. **FOCUS**.
