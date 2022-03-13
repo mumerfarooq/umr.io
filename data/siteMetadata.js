@@ -5,6 +5,7 @@ const siteMetadata = {
   description: 'umr.io',
   language: 'en-us',
   siteUrl: 'https://www.umr.io',
+  theme: 'system', // system, dark or light
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
@@ -17,17 +18,22 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com/in/umerf1/',
   locale: 'en-US',
   analytics: {
-    // supports plausible, simpleAnalytics or googleAnalytics
-    plausibleDataDomain: '', // e.g. www.umr.io
+    // If you want to use an analytics provider you have to add it to the
+    // content security policy in the `next.config.js` file.
+    // supports plausible, simpleAnalytics, umami or googleAnalytics
+    plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
+    umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
-    // supports mailchimp, buttondown, convertkit
+    // supports mailchimp, buttondown, convertkit, klaviyo, revue
     // Please add your .env file and modify it according to your selection
     provider: 'buttondown',
   },
   comment: {
+    // If you want to use a commenting system other than giscus you have to add it to the
+    // content security policy in the `next.config.js` file.
     // Select a provider and use the environment variables associated to it
     // https://vercel.com/docs/environment-variables
     provider: 'giscus', // supported providers: giscus, utterances, disqus
@@ -45,6 +51,10 @@ const siteMetadata = {
       // theme example: light, dark, dark_dimmed, dark_high_contrast
       // transparent_dark, preferred_color_scheme, custom
       theme: 'light',
+      // Place the comment box above the comments. options: bottom, top
+      inputPosition: 'bottom',
+      // Choose the language giscus will be displayed in. options: en, es, zh-CN, zh-TW, ko, ja etc
+      lang: 'en',
       // theme when dark mode
       darkTheme: 'transparent_dark',
       // If the theme option above is set to 'custom`

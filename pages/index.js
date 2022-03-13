@@ -28,7 +28,7 @@ export default function Home({ posts }) {
             </span>{' '}
             , I’m Umer Farooq
           </h1>
-          <h2 className="mb-16 text-lg prose text-gray-600 dark:text-gray-400">
+          <h2 className="prose mb-16 text-lg text-gray-600 dark:text-gray-400">
             {`Welcome to my home on the internet.`}
           </h2>
         </div>
@@ -48,7 +48,7 @@ export default function Home({ posts }) {
             return (
               <li key={slug} className="py-12">
                 <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
@@ -72,7 +72,7 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
                           {summary}
                         </div>
                       </div>
