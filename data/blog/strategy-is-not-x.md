@@ -1,6 +1,6 @@
 ---
 title: Strategy is NOT X
-date: '2021-01-13'
+date: '2022-01-13'
 tags: ['strategy', 'books', 'review']
 draft: false
 summary: Things I learnt from reading Good/Bad Strategy.

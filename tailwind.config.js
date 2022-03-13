@@ -30,7 +30,6 @@ module.exports = {
       colors: {
         primary: colors.blue,
         gray: colors.neutral,
-        backgroundColor: colors.yellow,
       },
       listStyleType: {
         arabic: 'arabic-indic',
