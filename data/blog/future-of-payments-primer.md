@@ -8,21 +8,35 @@ images: []
 layout: PostLayout
 ---
 
-I think [Primer.io](https://primer.io/) is the hottest paymentech startup right now and everyone should keep an eye out. You can also skip to the bullet point [TLDR](#TLDR) section at the bottom.
+[Primer](https://primer.io/) is the most exciting payments startup right now and everyone should keep 👀 out. You can also skip to the bullet point [TLDR](#TLDR) section at the bottom.
+
+## What's Primer?
+
+Primer claims to be the world's first automation platform for payments. It's Series A was led by Accel [without a pitch deck](https://flipboard.com/topic/spotify/fintech-primer-just-raised-18-7-million-without-a-pitch-deck-after-being-approa/a-QvjnchY-RwqVShJ0zovcWw%3Aa%3A2273650-077a568500%2Fbusinessinsider.com). Before getting into the details of what Primer has to offer I would like to give a bit of background.
 
 ## Background:
 
-Anyone who has worked with me knows that I love talking about payments. As fate would have it I was fortunate enough to work in the payments team at [Freelancer.com](https://www.freelancer.com), which included highlights such as writing the API layer which consolidated the various APIs around various PSPs (World Pay, Global Collect, PayPal, Adyen, Paytm, Skrill, NAB) into one unified payments layer. This meant that developers in other teams did not have to worry about the nuances of different payments providers. This also enabled the payments team to control user's checkout experience and
+Anyone who has worked with me knows that I love talking about payments. As fate would have it I was fortunate enough to work in the payments team at [Freelancer.com](https://www.freelancer.com). This included highlights such as writing the API layer which consolidated the various various PSPs (World Pay, Global Collect, PayPal, Adyen, Paytm, Skrill, NAB) into one unified payments layer. This meant that developers in other teams did not have to worry about the nuances of different payments providers.
 
-**The solution isnt novel because the problem isnt novel.** You will find out the almost all global online companies have implemented something similar.
+This single interface enabled the internal payments team to move quicly on
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1nz6muMNXF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Customising user's checkout payment methods wrt geolocation, currency and past behaviour.
+- Optimising authorization rate by retrying failed deposits. This was enabled by having a PCI certified vault.
+- Manage fraud by limiting payment methods to suspicious traffic.
+- Implement deposit routing workflows to maintain chargeback ratio across all payment providers.
 
--- list down problems.
--- commodisation stripe.
--- amazing dev tool team
--- risks
--- value props of primer
+I found out that almost [all](https://nordicapis.com/the-brilliance-of-spotify-internal-apis-to-mitigate-payments/) global tech companies have implemented something similar internally. **The solution is not novel because the problem is not.**
+
+Also, all this come with more cost and more challenges. The costs being that payment state engine gets really complicated which make things move more slowly. The challenges also arrive in reporting as because of the custom workflows it becomes difficult to report actual transactional costs.
+
+<div className="flex flex-row md:flex-col flex-wrap -mx-2 overflow-hidden xl:-mx-2">
+  <div>
+    <iframe height="453" src="https://twitframe.com/show?url=https://twitter.com/deputyashik/status/1430685958328881154"></iframe>
+  </div>
+  <div>
+    <iframe height="600" src="https://twitframe.com/show?https://twitter.com/Suhail/status/1418457863937163264"></iframe>
+  </div>
+</div>
 
 https://paydock.com/
 https://www.spreedly.com/
@@ -32,14 +46,3 @@ https://www.processout.com/telescope/
 https://www.verygoodsecurity.com/
 https://www.checkout.com/#know-more-solutions
 https://news.ycombinator.com/threads?id=primerapi
-
-<div className="flex flex-wrap -mx-2 overflow-hidden xl:-mx-2 text-center">
-  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    <iframe height="500" src="https://twitframe.com/show?url=https://twitter.com/deputyashik/status/1430685958328881154"></iframe>
-    <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/2">
-    <iframe height="500" src="https://twitframe.com/show?https://twitter.com/Suhail/status/1418457863937163264"></iframe>
-  </div>
-  </div>
-</div>
-
-https://flipboard.com/topic/spotify/fintech-primer-just-raised-18-7-million-without-a-pitch-deck-after-being-approa/a-QvjnchY-RwqVShJ0zovcWw%3Aa%3A2273650-077a568500%2Fbusinessinsider.com
