@@ -4,20 +4,12 @@ export const currentBooks = [
     href: 'https://amzn.to/38JclSC',
   },
   {
-    title: 'Bullshit Jobs (A Theory)',
-    href: 'https://amzn.to/3rR2T8C',
-  },
-  {
-    title: 'The Righteous Mind: Why Good People Are Divided by Politics and Religion',
-    href: 'https://amzn.to/3rB9hAJ',
-  },
-  {
     title: 'Zen And The Art Of Motorcycle Maintenance',
     href: 'https://www.amazon.com.au/Zen-Art-Motorcycle-Maintenance-Anniversary/dp/0099598167/',
   },
   {
-    title: 'Roots of Yoga',
-    href: 'https://amzn.to/3flZeKn',
+    title: 'Who We Are and How We Got Here: Ancient DNA and the new science of the human past',
+    href: 'https://www.amazon.com.au/Who-Are-How-Got-Here-ebook/dp/B077TQZX6Z/',
   },
 ]
 export const recommendedBooks = [
@@ -93,6 +85,10 @@ export const recommendedBooks = [
     title: 'Dune',
     href: 'https://www.amazon.com.au/Dune-Frank-Herbert/dp/0340960191/',
   },
+  {
+    title: 'Bullshit Jobs (A Theory)',
+    href: 'https://amzn.to/3rR2T8C',
+  },
 ]
 export const backlogBooks = [
   {
@@ -123,10 +119,6 @@ export const backlogBooks = [
   {
     title: 'Emperor of All Maladies: A Biography of Cancer',
     href: 'https://www.amazon.com.au/Emperor-All-Maladies-Siddhartha-Mukherjee/dp/1439107955/',
-  },
-  {
-    title: 'Who We Are and How We Got Here: Ancient DNA and the new science of the human past',
-    href: 'https://www.amazon.com.au/Who-Are-How-Got-Here-ebook/dp/B077TQZX6Z/',
   },
   {
     title: 'The Master and His Emissary: The Divided Brain and the Making of the Western World',
