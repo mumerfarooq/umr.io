@@ -53,5 +53,4 @@ Overall, I enjoyed reading the book and highly recommend it to you.
 - Strategy is the [How](https://twitter.com/shreyas/status/1460848932116844550?s=20) **NOT** the What.
 - More dynamic the situation the more simple objective needs to be.
 - Strategy is mostly about saying NO.
-- Focus on diagnosis of the situation.
 - Don't know where to start? Start with a list. **FOCUS**.
