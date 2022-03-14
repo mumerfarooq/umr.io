@@ -1,6 +1,6 @@
 ---
-title: Primer
-date: '2022-10-13'
+title: Is Primer the future of payments?
+date: '2022-03-14'
 tags: ['primer', 'api', 'payments', 'future']
 draft: true
 summary: Things I learnt from reading Good/Bad Strategy.

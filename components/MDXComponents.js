@@ -6,10 +6,12 @@ import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
 import Canva from './Canva'
+import Canvabackchannel from './CanvaBackchannel'
 import { BlogNewsletterForm } from './NewsletterForm'
 
 export const MDXComponents = {
   Canva,
+  Canvabackchannel,
   Image,
   TOCInline,
   a: CustomLink,
