@@ -29,6 +29,9 @@ I found out that almost [all](https://nordicapis.com/the-brilliance-of-spotify-i
 
 Also, all this come with more cost and more challenges. The costs being that payment state engine gets really complicated which make things move more slowly. The challenges also arrive in reporting as because of the custom workflows it becomes difficult to report actual transactional costs.
 
+Payment orchestration is nothing new but WHY do I think Primer will be sucessful? One word **Timingg**
+Using the same 4 Ts (TAM, TECH, TEAM, TIMING) framework promoted by the legendary Indian angel investor [Anupam Mithal](https://mobile.twitter.com/anupammittal)
+
 <div className="flex flex-row md:flex-col flex-wrap -mx-2 overflow-hidden xl:-mx-2">
   <div>
     <iframe height="453" src="https://twitframe.com/show?url=https://twitter.com/deputyashik/status/1430685958328881154"></iframe>
