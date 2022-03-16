@@ -9,7 +9,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/umer-memoji.png',
+  // socialBanner: '/static/images/umer-memoji.png',
   email: 'omer.farooque@gmail.com',
   github: 'https://github.com/mumerfarooq',
   twitter: 'https://twitter.com/gulshaniya/',
