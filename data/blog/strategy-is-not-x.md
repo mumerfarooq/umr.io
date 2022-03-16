@@ -44,7 +44,7 @@ The exercise of self reflection should be focussed on identifying your strengths
 
 Overall, I enjoyed reading the book and highly recommend it to you.
 
-### TLDR - Summary
+### <a name="TLDR"></a> TLDR - Summary
 
 - Figure out your differentiating leverage. Things which you are good at and double down.
 - Focus on the diagnosis of the situation aka identify your challenges.

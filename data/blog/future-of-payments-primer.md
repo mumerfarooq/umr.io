@@ -46,7 +46,7 @@ Some reasons include:
 - If you are a start-up and generally time poor, you want to move fast with Universal Checkout to take payments from multiple payment providers ASAP.
 - If you are a scale-up wanting to implement custom workflows to maintain vendor relationships and do not want to go through the burden of PCI certification.
 
-### Competitors:
+## Competitors:
 
 There are many challenges which Primer will face. Some could be from established payment ochestrators such as [Spreedly](https://www.spreedly.com/), [Corefy](https://corefy.com/) and [Paydock](https://paydock.com/) but none of them position themselves as a complete end-to-end payment platform. My gut feels say that I would be more worried about [Very Good Security](https://www.verygoodsecurity.com/payment-optimization) as they provide payment data security as a service which is the backbone needed for payment optimisation.
 
@@ -66,7 +66,9 @@ I will leave you with tweets from the founders of [Deputy](https://www.deputy.co
     <iframe height="300" src="https://twitframe.com/show?https://twitter.com/Suhail/status/1418457863937163264"></iframe>
   </div>
 </div>
-## TLDR
+
+## <a name="TLDR"></a> TLDR
+
 - Primer is no-code solution to manage your entire payment stack. Think of it as zapier of payments or payment platform as a service.
 - Primer product can be divided into Universal Checkout, Workflow and Connections.
 - Primer makes it easier and faster for other SaaS to integrate into your payment stack.
