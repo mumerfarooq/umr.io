@@ -6,7 +6,7 @@ draft: false
 summary: Powering e-commerce in the metaverse
 ---
 
-As part of the Antler's AU Winter Cohort 2021, I participated in an unsuccessful pitch to VCs for some money. The area of focus was on how we need an API layer to support creators in helping them monetize e-commerce in the metaverse. We called it Backchannel.
+As part of the Antler's AU Winter Cohort 2021, I participated in an unsuccessful pitch to VCs for some money. The area of focus was on how we need an API layer to support creators in helping them to monetize e-commerce in the metaverse. We called it Backchannel.
 
 Below is the slide deck:
 
