@@ -12,7 +12,7 @@ You can also skip to the bullet point [TLDR](#TLDR) section at the bottom.
 
 ## Background
 
-Linktree 5 year old start up with a hockey stick user growth solving a link in bio problem. Seen it being used as donations, landing pages, aggregate skus[not boring], school timetables,
+Linktree is a 5 year old start up with a hockey stick user growth. solving a link in bio problem. Seen it being used as donations, landing pages, aggregate skus[not boring], school timetables,
 
 One of the best things I like about Linktree is the amount of free marketing they get on social media. This comes by riding the wave of their creator's audience reach. The moment Pharrel uses Linktree, all of his social media followers know about Linktree.
 
@@ -40,7 +40,7 @@ I would like to argue that 24 million users is the **wrong way** of looking at L
 
 This is how Linktree's know everything about their creators. They know which creator is popular at what sort of content on what sort of platform. I believe it is very important for Linktree to monetize this traffic. There are few ways to go on about this:
 
-- Build a creator rolodex for businesses to discover and hire creators. Linktree handles all the logistics of payments and tracking affiliates ads campaign. This is one in a genartional opportunity for Linktree to control the business model of this space. Be the Google Ads of the creator economy.
+- Build a creator rolodex for businesses to discover and hire creators. Linktree handles all the logistics of payments and tracking affiliates ads campaign. This is once in a genaration opportunity for Linktree to control the business model of this space. Be the Google Ads of the creator economy.
 - Show ad's on freemium websites. Super risky on the legal side, not sure if IG,Tiktok will allow you to do this.
 - Creator discovery, mobile app. Linktree native links.
 
@@ -56,7 +56,7 @@ You do what companies like Apple, Microsoft, Shopify have done in the past. You 
 
 ### Prediction:
 
-To put it simply, Linktree is a [website builder](https://beacons.ai/i/website-builder). Unless Linktree manages to scale up it's revenue streams and be the ultimate one stop shop like Shopofy, it's hard to see it compete, for a company which have left behind in the linkinbio space. my gut feels says it could be a good automattic suite.
+To put it simply, Linktree is a [website builder](https://beacons.ai/i/website-builder). Unless Linktree manages to scale up it's revenue streams and be the ultimate one stop shop like Shopify, it's hard to see it compete, for a company which have left behind in the linkinbio space. my gut feels says it could be a good automattic suite.
 
 ## <a name="TLDR"></a> TLDR - Summary
 
