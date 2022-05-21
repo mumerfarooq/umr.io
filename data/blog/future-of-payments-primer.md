@@ -60,10 +60,10 @@ I will leave you with tweets from the founders of [Deputy](https://www.deputy.co
 
 <div className="flex flex-row md:flex-col flex-wrap -mx-2 overflow-hidden xl:-mx-2">
   <div>
-    <iframe height="300" src="https://twitframe.com/show?url=https://twitter.com/deputyashik/status/1430685958328881154"></iframe>
+    <StaticTweet id="1430685958328881154"/>
   </div>
   <div>
-    <iframe height="300" src="https://twitframe.com/show?https://twitter.com/Suhail/status/1418457863937163264"></iframe>
+    <StaticTweet id="1418457863937163264"/>
   </div>
 </div>
 

@@ -18,9 +18,7 @@ One of the best things I like about Linktree is the amount of free marketing the
 
 No wonder has caught the eye of VCs, insights. no mention of revenue, downround, 110 million
 
-<div class="w-2/5 content-center">
-  <blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">$1.3B is a bold valuation for a business that product that would be killed overnight by a junior PM at Instagram or Twitter.<br/><br/> <a href="https://t.co/X1Gcirr6so">https://t.co/X1Gcirr6so</a></p>&mdash; Dare Obasanjo (@Carnage4Life) <a href="https://twitter.com/Carnage4Life/status/1504110183634518023?ref_src=twsrc%5Etfw">March 16, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<StaticTweet id="1504110183634518023" />
 
 ## Quick back of the ✉️ calculations:
 

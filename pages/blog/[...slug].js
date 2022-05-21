@@ -1,8 +1,10 @@
 import fs from 'fs'
 import PageTitle from '@/components/PageTitle'
+import Tweet from '@/components/Tweet'
 import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+import { getTweets } from '@/lib/twitter'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -37,10 +39,17 @@ export async function getStaticProps({ params }) {
     fs.writeFileSync('./public/feed.xml', rss)
   }
 
-  return { props: { post, authorDetails, prev, next } }
+  /**
+   * Get tweets from API
+   */
+  const tweets =
+    // TODO: write proper return types for getTweets
+    post.tweetIDs.length > 0 ? await getTweets(post.tweetIDs) : {}
+
+  return { props: { post, authorDetails, prev, next, tweets } }
 }
 
-export default function Blog({ post, authorDetails, prev, next }) {
+export default function Blog({ post, authorDetails, prev, next, tweets }) {
   const { mdxSource, toc, frontMatter } = post
 
   return (
@@ -54,6 +63,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
           authorDetails={authorDetails}
           prev={prev}
           next={next}
+          tweets={tweets}
         />
       ) : (
         <div className="mt-24 text-center">
