@@ -4,6 +4,7 @@ import SimpleAnalytics from './SimpleAnalytics'
 import GoatCounter from './GoatCounter'
 import Umami from './Umami'
 import siteMetadata from '@/data/siteMetadata'
+import Clarity from './Clarity'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
@@ -15,6 +16,7 @@ const Analytics = () => {
       {isProduction && siteMetadata.analytics.umamiWebsiteId && <Umami />}
       {isProduction && siteMetadata.analytics.googleAnalyticsId && <GA />}
       {isProduction && <GoatCounter />}
+      {isProduction && <Clarity />}
     </>
   )
 }
