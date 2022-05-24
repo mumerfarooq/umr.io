@@ -1,7 +1,7 @@
-import { getTweets } from '@/lib/twitter'
+import { getTweets, getTweetThread } from '@/lib/twitter'
 
 export default async (_, res) => {
-  const tweets = await getTweets(['1295746433350397952'])
+  const tweets = await getTweetThread('1527688400693698561')
 
   return res.status(200).json(tweets)
 }
