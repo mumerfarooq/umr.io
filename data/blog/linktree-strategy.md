@@ -2,7 +2,7 @@
 title: Linktree is a dream.
 date: '2022-05-26'
 tags: ['linktree', 'startup', 'venture capital', 'strategy']
-draft: false
+draft: true
 summary: Linktree is a dream.
 ---
 
