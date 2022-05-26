@@ -1,7 +1,7 @@
 ---
 title: Backchannel
 date: '2022-02-10'
-tags: ['travis scott', 'e-commerce', 'metaverse']
+tags: ['travis scott', 'e-commerce', 'metaverse', 'venture-capital', 'startup']
 draft: false
 summary: Powering e-commerce in the metaverse
 ---
