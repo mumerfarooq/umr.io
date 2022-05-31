@@ -12,9 +12,9 @@ You can also skip to the bullet point [TLDR](#TLDR) section at the bottom.
 
 ## Background
 
-Linktree is a 5 year old start up with a hockey stick user growth in the `link in bio` space. It has been adopted by celebrities, artists, schools, charities, restaurants. etc to arrange their content.
+Linktree is a 5 year old start up with a hockey stick user growth in the `link in bio` space. It has been adopted by celebrities, artists, schools, charities, restaurants, etc to arrange their content.
 
-One of the best things I like about Linktree is the amount of free marketing they get on social media. This comes by riding the wave of their creator's audience reach. The moment Pharrel [uses](https://linktr.ee/pharrell) Linktree, his social media followers know about Linktree. Amazing network effects!
+One of the best things about Linktree is the amount of free marketing they get on social media. This comes by riding the wave of their creator's audience reach. The moment Pharrel [uses](https://linktr.ee/pharrell) Linktree, his social media followers know about Linktree. Amazing network effects!
 
 No wonder Linktree has caught the eye of venture capital, with Linktree raising **165.7 million dollars in less than two years**. The latest raise, was an extension of an earlier Series B round. That round, valued the business at 1.3 billion dollars in March 2021 when Linktree had 12 million users. 🔥
 
