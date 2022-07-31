@@ -14,6 +14,10 @@ export const currentBooks = [
 ]
 export const recommendedBooks = [
   {
+    title: 'First Three Minutes: A Modern View Of The Origin Of The Universe',
+    href: 'https://www.amazon.com.au/First-Three-Minutes-Modern-Universe/dp/0465024378',
+  },
+  {
     title: 'Debt: The First 5,000 Years',
     href: 'https://amzn.to/38JclSC',
   },
