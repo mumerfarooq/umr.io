@@ -3,6 +3,7 @@ import Plausible from './Plausible'
 import SimpleAnalytics from './SimpleAnalytics'
 import GoatCounter from './GoatCounter'
 import Umami from './Umami'
+import Posthog from './Posthog'
 import siteMetadata from '@/data/siteMetadata'
 import Clarity from './Clarity'
 
@@ -17,6 +18,7 @@ const Analytics = () => {
       {isProduction && siteMetadata.analytics.googleAnalyticsId && <GA />}
       {isProduction && <GoatCounter />}
       {isProduction && <Clarity />}
+      {isProduction && siteMetadata.analytics.posthogAnalyticsId && <Posthog />}
     </>
   )
 }
