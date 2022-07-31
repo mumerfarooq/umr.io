@@ -14,6 +14,10 @@ export const currentBooks = [
 ]
 export const recommendedBooks = [
   {
+    title: 'Debt: The First 5,000 Years',
+    href: 'https://amzn.to/38JclSC',
+  },
+  {
     title: 'Our Mathematical Universe: My Quest for the Ultimate Nature of Reality',
     href: 'https://amzn.to/38JclSC',
   },
