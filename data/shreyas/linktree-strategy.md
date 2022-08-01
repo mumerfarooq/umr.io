@@ -1,6 +1,6 @@
 ---
-title: Linktree is a dream
-date: '2022-05-26'
+title: Why do smart product people & teams often build products with mediocre or no impact?
+date: '2020-06-12'
 tags: ['linktree', 'startup', 'venture capital', 'strategy']
 draft: false
 summary: Why do smart product people & teams often build products with mediocre or no impact?

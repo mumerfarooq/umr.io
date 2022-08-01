@@ -1,12 +1,11 @@
 import fs from 'fs'
 import PageTitle from '@/components/PageTitle'
-import Tweet from '@/components/Tweet'
 import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 import { getTweets } from '@/lib/twitter'
 
-const DEFAULT_LAYOUT = 'PostLayout'
+const DEFAULT_LAYOUT = 'PostSimple'
 
 export async function getStaticPaths() {
   const posts = getFiles('shreyas')
