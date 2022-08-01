@@ -50,7 +50,7 @@ Overall, I enjoyed reading the book and highly recommend it to you.
 - Focus on the diagnosis of the situation aka identify your challenges.
 - OKR is an strategy-alignment exercise, not a strategy-creation activity.
 - Avoid crank winding exercises like product DVF to set strategy.
-- Strategy is the [How](https://twitter.com/shreyas/status/1460848932116844550?s=20) **NOT** the What.
+- Strategy is the [How](https://twitter.com/pitter/status/1460848932116844550?s=20) **NOT** the What.
 - More dynamic the situation the more simple objective needs to be.
 - Strategy is mostly about saying NO.
 - Don't know where to start? Start with a list. **FOCUS**.

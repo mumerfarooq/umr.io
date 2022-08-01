@@ -28,3 +28,5 @@ summary: Why do smart product people & teams often build products with mediocre 
 <StaticTweet id="1285015107638947841" />
 <StaticTweet id="1317716921836474368" />
 <StaticTweet id="1354654187162767360" />
+<StaticTweet id="1357144394462154752" />
+<StaticTweet id="1551948837157085185" />

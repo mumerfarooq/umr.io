@@ -8,7 +8,7 @@ import { getTweets } from '@/lib/twitter'
 const DEFAULT_LAYOUT = 'PostSimple'
 
 export async function getStaticPaths() {
-  const posts = getFiles('shreyas')
+  const posts = getFiles('pitter')
   return {
     paths: posts.map((p) => ({
       params: {
@@ -20,11 +20,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('shreyas')
+  const allPosts = await getAllFilesFrontMatter('pitter')
   const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join('/'))
   const prev = allPosts[postIndex + 1] || null
   const next = allPosts[postIndex - 1] || null
-  const post = await getFileBySlug('shreyas', params.slug.join('/'))
+  const post = await getFileBySlug('pitter', params.slug.join('/'))
   const authorList = post.frontMatter.authors || ['default']
   const authorPromise = authorList.map(async (author) => {
     const authorResults = await getFileBySlug('authors', [author])

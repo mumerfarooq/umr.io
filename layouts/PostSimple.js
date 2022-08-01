@@ -27,6 +27,18 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </dd>
                 </div>
               </dl>
+              {tags && (
+                <div className="py-4 xl:py-8">
+                  <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                    Tags
+                  </h2>
+                  <div className="flex-wrap tracking-wide">
+                    {tags.map((tag) => (
+                      <Tag key={tag} text={tag} />
+                    ))}
+                  </div>
+                </div>
+              )}
               <div></div>
             </div>
           </header>
@@ -38,18 +50,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             </div>
             {/* <Comments frontMatter={frontMatter} /> */}
-            {tags && (
-              <div className="py-4 xl:py-8">
-                <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                  Tags
-                </h2>
-                <div className="flex flex-wrap">
-                  {tags.map((tag) => (
-                    <Tag key={tag} text={tag} />
-                  ))}
-                </div>
-              </div>
-            )}
             <footer>
               <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
                 {prev && (
@@ -73,6 +73,18 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
+              {tags && (
+                <div className="py-4 xl:py-8">
+                  <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                    Tags
+                  </h2>
+                  <div className="flex-wrap tracking-wide">
+                    {tags.map((tag) => (
+                      <Tag key={tag} text={tag} />
+                    ))}
+                  </div>
+                </div>
+              )}
             </footer>
           </div>
         </div>
