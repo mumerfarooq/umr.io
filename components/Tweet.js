@@ -23,10 +23,9 @@ export default function Tweet({
   const tweetUrl = `https://twitter.com/${author.username}/status/${id}`
   const createdAt = new Date(created_at)
   const formattedText = text
-    .replace(/https:\/\/[\n\S]+/g, (match) => {
-      console.log(match)
-      return `<a href=${match} target="_blank" rel="noopener noreferrer" className="ml-4 flex flex-col !no-underline">${match}</a>`
-    })
+    // .replace(/https:\/\/[\n\S]+/g, (match) => {
+    //   return `<a href=${match} target="_blank" rel="noopener noreferrer" className="ml-4 flex flex-col !no-underline">${match}</a>`
+    // })
     .replace('&amp;', '&')
   const quoteTweet = referenced_tweets && referenced_tweets.find((t) => t.type === 'quoted')
 
