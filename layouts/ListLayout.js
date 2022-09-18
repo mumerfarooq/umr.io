@@ -5,7 +5,14 @@ import { useState } from 'react'
 import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
 
-export default function ListLayout({ prefix, posts, title, initialDisplayPosts = [], pagination }) {
+export default function ListLayout({
+  prefix,
+  posts,
+  title,
+  description,
+  initialDisplayPosts = [],
+  pagination,
+}) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
@@ -25,12 +32,16 @@ export default function ListLayout({ prefix, posts, title, initialDisplayPosts =
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
+          <div>
+            There is amazing product management threads on Twitter. I do find the discovery a bit
+            hard. So this how I bookmark it. Hope you find this useful.
+          </div>
           <div className="relative max-w-lg">
             <input
-              aria-label="Search articles"
+              aria-label="Search"
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
-              placeholder="Search articles"
+              placeholder="Search"
               className="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
             />
             <svg

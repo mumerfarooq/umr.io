@@ -25,7 +25,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
         prefix="pitter"
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="All Posts"
+        title="Product threads"
       />
     </>
   )
