@@ -32,10 +32,7 @@ export default function ListLayout({
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
-          <div>
-            There is amazing product management threads on Twitter. I do find the discovery a bit
-            hard. So this how I bookmark it. Hope you find this useful.
-          </div>
+          <div>{description}</div>
           <div className="relative max-w-lg">
             <input
               aria-label="Search"

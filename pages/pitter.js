@@ -26,6 +26,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
         title="Product threads"
+        description="There is amazing product management threads on Twitter. I do find the discovery a bit hard. This is how I bookmark it. Hope you find this useful."
       />
     </>
   )
