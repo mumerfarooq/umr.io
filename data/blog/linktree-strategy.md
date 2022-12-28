@@ -4,6 +4,7 @@ date: '2022-05-26'
 tags: ['linktree', 'startup', 'venture capital', 'strategy']
 draft: false
 summary: Linktree is a dream.
+images: ['/static/images/linktree/linktree.webp']
 ---
 
 [Linktree](https://linktr.ee/) is the creator's economy poster child. From first glance it might seem overvalued but it is not about what Linktree is now. It is about the dreams of what it could be. The speculation of a category defining startup is an interesting thought exercise.
