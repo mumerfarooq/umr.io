@@ -4,7 +4,6 @@ date: '2022-03-2'
 tags: ['primer', 'api', 'payments', 'future', 'zapier', 'deputy', 'startup']
 draft: false
 summary: Primer
-images: []
 layout: PostLayout
 images: ['/static/images/primer/workflow.png']
 ---
