@@ -6,6 +6,7 @@ draft: false
 summary: Primer
 images: []
 layout: PostLayout
+images: [/static/images/primer/workflow.png]
 ---
 
 [Primer](https://primer.io/) is the most exciting payments startup right now and everyone should keep 👀 out.
