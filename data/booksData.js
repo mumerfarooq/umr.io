@@ -97,6 +97,10 @@ export const recommendedBooks = [
     title: 'Bullshit Jobs (A Theory)',
     href: 'https://amzn.to/3rR2T8C',
   },
+  {
+    title: 'Build: An Unorthodox Guide to Making Things Worth Making',
+    href: 'https://www.amazon.com/Build-Unorthodox-Guide-Making-Things/dp/0063046067',
+  },
 ]
 export const backlogBooks = [
   {
