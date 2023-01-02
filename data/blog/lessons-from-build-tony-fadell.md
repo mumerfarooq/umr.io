@@ -55,4 +55,4 @@ The following are additional pieces of wisdom from the book that resonated with 
 - Recognise the decision in terms of data vs opinion. Data cannot solve an opinion based problem.
 - Try to get better at storytelling.
 - Avoid management consultants.
-- **In the end, there are two things matter: products and the people. What you build and who you build it with.**
+- **In the end, there are two things that matter: products and the people. What you build and who you build it with.**
