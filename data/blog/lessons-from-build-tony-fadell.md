@@ -45,12 +45,12 @@ In these situations, it's important to gather user insights of the problem space
 
 The following are additional pieces of wisdom from the book that resonated with me:
 
-- Being exacting and expecting great work is not micromangement. Your job is get the most out of your team.
-- You will need a different team for product's v1 and v2. As the difference is distruption vs evolution.
-- You can only have one customer, even if you are a B2B2C bussiness.
-- While inteterviewing worry about three things. Who are they, What they have done and Why they have done it.
-- As a bussiness never outsource your problem before trying to fix it yourself. Specially if its crucial to the future success of the business.
-- Product manager main job is to make sure the teams do not lose sight of the main goal, which is happy customers.
+- Being exacting and expecting great work is not micromanagement. Your job is to get the most out of your team.
+- You will need a different team for product's v1 and v2. As the difference is disruption vs evolution.
+- You can only have one customer, even if you are a B2B2C business.
+- While interviewing, worry about three things. Who are they, What they have done and Why they have done it.
+- As a business, never outsource your problem before trying to fix it yourself. Especially if it's crucial to the future success of the business.
+- Product manager's main job is to make sure the teams do not lose sight of the main goal, which is happy customers.
 - Mission driven assholes can be the best of assholes to work with.
 - Recognise the decision in terms of data vs opinion. Data cannot solve an opinion based problem.
 - Try to get better at storytelling.
