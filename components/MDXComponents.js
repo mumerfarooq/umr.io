@@ -7,12 +7,14 @@ import TOCInline from './TOCInline'
 import Pre from './Pre'
 import Canva from './Canva'
 import Canvabackchannel from './CanvaBackchannel'
+import GoogleSlideSMTP from './GoogleSlideSMTP'
 import { BlogNewsletterForm } from './NewsletterForm'
 import Tweet from './Tweet'
 
 export const MDXComponents = {
   Canva,
   Canvabackchannel,
+  GoogleSlideSMTP,
   Image,
   TOCInline,
   a: CustomLink,
