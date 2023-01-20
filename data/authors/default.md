@@ -1,8 +1,6 @@
 ---
 name: Umer Farooq
 avatar: /static/images/avatar.png
-occupation: Product Manager
-company: Spaceship Financial Services
 email: omer.farooque@gmail.com
 twitter: https://twitter.com/gulshaniya
 linkedin: https://www.linkedin.com/in/umerf1/
