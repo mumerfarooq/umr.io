@@ -15,4 +15,4 @@ layout: PostLayout
 - It can be a thankless job.
 - Design courses + languages
 
-<!-- <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7039855236856897536" height="613" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe> -->
+{/_ <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7039855236856897536" height="613" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe> _/}

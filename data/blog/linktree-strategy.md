@@ -29,8 +29,6 @@ No wonder Linktree has caught the eye of venture capital, with Linktree raising 
 
 No wonder the next raise was an extension with 24 million users; the multiple goes down to ~50x. Considering, the last disclosed revenue of Linktree was 3 million ARR at 2.8 million users. I am pretty happy with my generous number, with a confidence interval around \[40x-80x\]. 40x might look super high but Canva was last [valued](https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/) at 40 billion with 1 billion ARR.
 
-<StaticTweet id="1504110183634518023" />
-
 ## What could Linktree be:
 
 ### Billion clicks:
@@ -42,8 +40,6 @@ This is how Linktree know everything about their creators. They know which creat
 - **Build a creator rolodex for businesses to discover and hire creators.** Linktree handles all the logistics of payments and tracking affiliates' ads campaigns. This is a once in a generation opportunity for Linktree to be the Google Ads of the creator economy.
 - **Show ads on freemium websites.** Super risky on the legal side, not sure if IG,Tiktok will allow you to do this.
 - **Enable creator discovery for consumers on Linktree's mobile app.** Second order effects of redirecting linktr.ee links to the Linktree's native app experience could be interesting.
-
-<StaticTweet id="1325680070543900673" />
 
 ### Give us a platform:
 
