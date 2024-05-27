@@ -7,7 +7,8 @@ const siteMetadata = {
   siteUrl: 'https://www.umr.io',
   theme: 'system', // system, dark or light
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: '/static/images/logo.png',
+  //siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/avatar.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/avatar.png',
   email: 'omer.farooque@gmail.com',
