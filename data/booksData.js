@@ -5,17 +5,17 @@ export const currentBooks = [
   },
   {
     title: 'Zen And The Art Of Motorcycle Maintenance',
-    href: 'https://www.amazon.com.au/Zen-Art-Motorcycle-Maintenance-Anniversary/dp/0099598167/',
+    href: 'https://www.amazon.com/Zen-Art-Motorcycle-Maintenance-Anniversary/dp/0099598167/',
   },
   {
     title: 'Who We Are and How We Got Here: Ancient DNA and the new science of the human past',
-    href: 'https://www.amazon.com.au/Who-Are-How-Got-Here-ebook/dp/B077TQZX6Z/',
+    href: 'https://www.amazon.com/Who-Are-How-Got-Here-ebook/dp/B077TQZX6Z/',
   },
 ]
 export const recommendedBooks = [
   {
     title: 'First Three Minutes: A Modern View Of The Origin Of The Universe',
-    href: 'https://www.amazon.com.au/First-Three-Minutes-Modern-Universe/dp/0465024378',
+    href: 'https://www.amazon.com/First-Three-Minutes-Modern-Universe/dp/0465024378',
   },
   {
     title: 'Debt: The First 5,000 Years',
@@ -91,7 +91,7 @@ export const recommendedBooks = [
   },
   {
     title: 'Dune',
-    href: 'https://www.amazon.com.au/Dune-Frank-Herbert/dp/0340960191/',
+    href: 'https://www.amazon.com/Dune-Frank-Herbert/dp/0340960191/',
   },
   {
     title: 'Bullshit Jobs (A Theory)',
@@ -100,6 +100,14 @@ export const recommendedBooks = [
   {
     title: 'Build: An Unorthodox Guide to Making Things Worth Making',
     href: 'https://www.amazon.com/Build-Unorthodox-Guide-Making-Things/dp/0063046067',
+  },
+  {
+    title: 'Notes from Underground',
+    href: 'https://www.amazon.com/Underground-Vintage-Classics-Fyodor-Dostoevsky/dp/067973452X/',
+  },
+  {
+    title: 'First Three Minutes after the Big Bang',
+    href: 'https://www.amazon.com/First-Three-Minutes-Modern-Universe/dp/0465024378',
   },
 ]
 export const backlogBooks = [
@@ -122,18 +130,18 @@ export const backlogBooks = [
   },
   {
     title: 'Consider The Lobster: Essays and Arguments',
-    href: 'https://www.amazon.com.au/Consider-Lobster-David-Foster-Wallace/dp/034911952X/',
+    href: 'https://www.amazon.com/Consider-Lobster-David-Foster-Wallace/dp/034911952X/',
   },
   {
     title: 'The Strange Order of Things: Life, Feeling, and the Making of Cultures',
-    href: 'https://www.amazon.com.au/Strange-Order-Things-Feeling-Cultures/dp/B079C54HCL/',
+    href: 'https://www.amazon.com/Strange-Order-Things-Feeling-Cultures/dp/B079C54HCL/',
   },
   {
     title: 'Emperor of All Maladies: A Biography of Cancer',
-    href: 'https://www.amazon.com.au/Emperor-All-Maladies-Siddhartha-Mukherjee/dp/1439107955/',
+    href: 'https://www.amazon.com/Emperor-All-Maladies-Siddhartha-Mukherjee/dp/1439107955/',
   },
   {
     title: 'The Master and His Emissary: The Divided Brain and the Making of the Western World',
-    href: 'https://www.amazon.com.au/Master-His-Emissary-Divided-Western/dp/B0851PYZKZ/',
+    href: 'https://www.amazon.com/Master-His-Emissary-Divided-Western/dp/B0851PYZKZ/',
   },
 ]
