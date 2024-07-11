@@ -105,10 +105,6 @@ export const recommendedBooks = [
     title: 'Notes from Underground',
     href: 'https://www.amazon.com/Underground-Vintage-Classics-Fyodor-Dostoevsky/dp/067973452X/',
   },
-  {
-    title: 'First Three Minutes after the Big Bang',
-    href: 'https://www.amazon.com/First-Three-Minutes-Modern-Universe/dp/0465024378',
-  },
 ]
 export const backlogBooks = [
   {

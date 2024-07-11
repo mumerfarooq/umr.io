@@ -8,7 +8,7 @@ images: []
 layout: PostLayout
 ---
 
-The world the filled with either bad strategy or imitations of it. As for most things in life, it is easier to identify a terrible version than it is to recognise a good one.
+The world is filled with either bad strategy or imitations of it. As for most things in life, it is easier to identify a terrible version than it is to recognise a good one.
 
 To my surprise, I enjoyed reading [Good Strategy/Bad Strategy: The Difference and Why It Matters](https://www.amazon.com.au/Good-Strategy-Bad-Difference-Matters/dp/0307886239). Below are my top learnings from the masterpiece. You can also skip to the bullet point [TLDR](#TLDR) section at the bottom.
 
@@ -22,11 +22,11 @@ Echoing the sentiment above, put a ✋ up when you enquired about strategy and i
 
 ### Strategy should not come from a template.
 
-Have you noticed how many strategy presentations look like cookie-cutter consultant work? If you see a template simlar to [this](https://www.canva.com/templates/EADaood59tE-orange-corporate-strategy-map-chart/) that means the CEO was too lazy and hired consultants. I totally agree with Toby [here](https://twitter.com/tobi/status/1266801564855021568).
+Have you noticed how many strategy presentations look like cookie-cutter consultant work? If you see a template similar to [this](https://www.canva.com/templates/EADaood59tE-orange-corporate-strategy-map-chart/) that means the CEO was too lazy and hired consultants. I totally agree with Toby [here](https://twitter.com/tobi/status/1266801564855021568).
 
 ### Strategy is not a vision statement.
 
-A vision statement is another thing which is thrown around when we talk about strategy. One needs to realise that strategy is not the destination. For example, if you read WellsFargo's mission statement they both
+A vision statement is another thing which is thrown around when we talk about strategy. One needs to realise that strategy is not the destination. For example, if you read WellsFargo's mission statement
 
 > Our vision is to satisfy our customers' financial needs and help them succeed financially
 

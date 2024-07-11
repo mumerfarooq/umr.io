@@ -22,4 +22,4 @@ In practical terms faith could be in things which are not religious. When stacke
 
 > There can be no virtue without immortality. - Ivan Karamazov
 
-Existenlist have [built](https://www.goodreads.com/quotes/3222086-the-existentialist-on-the-contrary-finds-it-extremely-embarrassing-that) their philosophy on the personality of Ivan Karamazov.
+Existentialist have [built](https://www.goodreads.com/quotes/3222086-the-existentialist-on-the-contrary-finds-it-extremely-embarrassing-that) their philosophy on the personality of Ivan Karamazov.
