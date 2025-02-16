@@ -3,7 +3,7 @@ title: Lessons from Tony Fadell
 date: '2023-01-03'
 tags: ['apple', 'startup', 'business', 'life', 'tony fadell', 'product']
 draft: false
-summary:
+summary: 'Your job is to get the most out of your team'
 images: ['/static/images/build/build.jpg']
 ---
 

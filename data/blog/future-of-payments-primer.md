@@ -1,9 +1,9 @@
 ---
 title: Is Primer the future of payments?
 date: '2022-03-2'
-tags: ['primer', 'api', 'payments', 'future', 'zapier', 'deputy', 'startup']
+tags: ['primer', 'api', 'payments', 'startup']
 draft: false
-summary: Primer
+summary: Primer is the future of payments.
 layout: PostLayout
 images: ['/static/images/primer/workflow.png']
 ---

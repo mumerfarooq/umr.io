@@ -3,7 +3,7 @@ title: Strategy is NOT X
 date: '2022-03-13'
 tags: ['strategy', 'books', 'review']
 draft: false
-summary: Things I learnt from reading Good/Bad Strategy.
+summary: Strategy is the madness towards the destination, not the destination itself.
 images: []
 layout: PostLayout
 ---
