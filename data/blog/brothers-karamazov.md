@@ -2,7 +2,7 @@
 title: The Brothers Karamazov
 date: '2024-05-25'
 tags: ['life', 'wisdom', 'russian', 'eternal']
-draft: false
+draft: true
 summary: Faith comes from believing a miracle will happen rather than believing after witnessing.
 images: []
 layout: PostLayout

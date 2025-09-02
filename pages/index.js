@@ -3,7 +3,6 @@ import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
-import formatDate from '@/lib/utils/formatDate'
 
 import NewsletterForm from '@/components/NewsletterForm'
 
@@ -29,7 +28,7 @@ export default function Home({ posts }) {
             , I’m Umer Farooq
           </h1>
           <h2 className="prose mb-16 text-lg text-gray-600 dark:text-gray-400">
-            {`I write about strategy, fintech, and life. Here are my latest articles.`}
+            {`I’m trying to make sense of strategy, fintech, and how people work. Writing helps me think.`}
             {/* <Link
                       href={`/blog/strategy-is-not-x`}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -59,12 +58,6 @@ export default function Home({ posts }) {
               >
                 <article className="flex h-full flex-col">
                   <div className="flex-grow space-y-1 sm:space-y-1.5">
-                    <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date)}</time>
-                      </dd>
-                    </dl>
                     <div>
                       <div className="space-y-1.5">
                         <h2 className="text-xl font-bold leading-7 tracking-tight">
