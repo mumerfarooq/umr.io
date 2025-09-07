@@ -3,6 +3,7 @@ import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import Image from './Image'
 import CustomLink from './Link'
+import LinkPreview from './LinkPreview'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
 import Canva from './Canva'
@@ -17,7 +18,7 @@ export const MDXComponents = {
   GoogleSlideSMTP,
   Image,
   TOCInline,
-  a: CustomLink,
+  a: LinkPreview,
   pre: Pre,
   BlogNewsletterForm: BlogNewsletterForm,
   wrapper: ({ components, layout, ...rest }) => {
