@@ -52,18 +52,18 @@ export default function Home({ posts }) {
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <div
+              <Link
                 key={slug}
-                className="rounded-lg border border-gray-200 p-2 transition-all duration-200 hover:scale-[1.02] hover:shadow-lg dark:border-gray-700 sm:p-3"
+                href={`/blog/${slug}`}
+                aria-label={`Read "${title}"`}
+                className="block cursor-pointer rounded-lg border border-gray-200 p-2 transition-all duration-200 hover:scale-[1.02] hover:bg-gray-50 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 dark:border-gray-700 dark:hover:bg-gray-800/40 sm:p-3"
               >
                 <article className="flex h-full flex-col">
                   <div className="flex-grow space-y-1 sm:space-y-1.5">
                     <div>
                       <div className="space-y-1.5">
-                        <h2 className="text-xl font-bold leading-7 tracking-tight">
-                          <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
-                            {title}
-                          </Link>
+                        <h2 className="text-xl font-bold leading-7 tracking-tight text-gray-900 dark:text-gray-100">
+                          {title}
                         </h2>
                         <div className="line-clamp-3 prose max-w-none text-sm text-gray-500 dark:text-gray-400">
                           {summary}
@@ -71,25 +71,17 @@ export default function Home({ posts }) {
                         {/* <div className="flex flex-wrap items-center text-sm text-gray-500 dark:text-gray-400">
                           {tags.map((tag, index) => (
                             <>
-                              {index > 0 && <span className="mx-1.5">•</span>}
+                              {index > 0 && <span className=\"mx-1.5\">•</span>}
                               <Tag key={tag} text={tag} />
                             </>
                           ))}
                         </div> */}
-                        <div className="font-medium">
-                          <Link
-                            href={`/blog/${slug}`}
-                            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                            aria-label={`Read "${title}"`}
-                          >
-                            Read more &rarr;
-                          </Link>
-                        </div>
+                        {/* Removed Read more link; entire card is clickable */}
                       </div>
                     </div>
                   </div>
                 </article>
-              </div>
+              </Link>
             )
           })}
           {posts.length > MAX_DISPLAY && (
