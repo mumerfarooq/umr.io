@@ -25,8 +25,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        serif: ['Spectral', ...defaultTheme.fontFamily.serif],
+        sans: ['Space Grotesk', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.blue,
@@ -38,15 +37,11 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.900'),
-            fontFamily: theme('fontFamily.sans'), // Inter for body
+            color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.primary.600'),
-              textDecoration: 'underline',
-              textDecorationColor: theme('colors.primary.300'),
+              color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.700')} !important`,
-                textDecorationColor: theme('colors.primary.600'),
+                color: `${theme('colors.primary.600')} !important`,
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -54,22 +49,18 @@ module.exports = {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
-              fontFamily: theme('fontFamily.serif'), // Spectral for headings
             },
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
-              fontFamily: theme('fontFamily.serif'),
             },
             h3: {
               fontWeight: '600',
               color: theme('colors.gray.900'),
-              fontFamily: theme('fontFamily.serif'),
             },
             'h4,h5,h6': {
               color: theme('colors.gray.900'),
-              fontFamily: theme('fontFamily.serif'),
             },
             pre: {
               backgroundColor: theme('colors.gray.800'),
@@ -105,11 +96,10 @@ module.exports = {
             'ul li::marker': {
               backgroundColor: theme('colors.gray.500'),
             },
-            strong: { color: theme('colors.gray.900') },
+            strong: { color: theme('colors.gray.600') },
             blockquote: {
               color: theme('colors.gray.900'),
               borderLeftColor: theme('colors.gray.200'),
-              fontStyle: 'italic',
             },
           },
         },
