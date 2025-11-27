@@ -21,7 +21,7 @@ const MobileNav = () => {
     <div className="sm:hidden">
       <button
         type="button"
-        className="ml-1 mr-1 h-8 w-8 rounded py-1"
+        className="ml-1 mr-1 h-10 w-10 rounded-full p-2 transition-colors hover:bg-stone-200 active:bg-stone-300 dark:hover:bg-stone-800 dark:active:bg-stone-700"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -29,7 +29,7 @@ const MobileNav = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="text-gray-900 dark:text-gray-100"
+          className="text-stone-900 dark:text-stone-100"
         >
           <path
             fillRule="evenodd"
@@ -39,14 +39,14 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-0 left-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
+        className={`fixed top-0 left-0 z-50 h-full w-full transform bg-stone-50 backdrop-blur-sm duration-300 ease-in-out dark:bg-stone-900 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div className="flex justify-end">
           <button
             type="button"
-            className="mr-5 mt-11 h-8 w-8 rounded"
+            className="mr-5 mt-11 h-10 w-10 rounded-full transition-colors hover:bg-stone-200 dark:hover:bg-stone-800"
             aria-label="Toggle Menu"
             onClick={onToggleNav}
           >
@@ -54,7 +54,7 @@ const MobileNav = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="text-gray-900 dark:text-gray-100"
+              className="text-stone-900 dark:text-stone-100"
             >
               <path
                 fillRule="evenodd"
@@ -64,12 +64,15 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className="fixed mt-8 h-full">
+        <nav className="fixed mt-8 h-full w-full">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
+            <div
+              key={link.title}
+              className="border-b border-stone-200 px-8 py-6 dark:border-stone-800"
+            >
               <Link
                 href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                className="font-serif text-3xl font-bold tracking-tight text-stone-900 transition-colors hover:text-wine-600 dark:text-stone-100 dark:hover:text-wine-400"
                 onClick={onToggleNav}
               >
                 {link.title}
