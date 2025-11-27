@@ -30,7 +30,7 @@ export default function Home({ posts }) {
             {/* Avatar - responsive sizing */}
             <div className="relative z-10">
               <Image
-                src="/static/images/avatar.png"
+                src="/static/images/avatar.jpg"
                 alt="Umer Farooq"
                 width="320px"
                 height="320px"
