@@ -19,15 +19,15 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div>
-        <div className="pt-6">
-          <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <div className="pt-8">
+          <h1 className="pb-6 text-2xl font-extrabold leading-8 tracking-tight text-gray-800 dark:text-gray-100 sm:pb-8 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Hi{' '}
             <span role="img" aria-label="wave">
               👋
             </span>{' '}
-            , I’m Umer Farooq
+            , I'm Umer Farooq
           </h1>
-          <h2 className="prose mb-16 text-lg text-gray-600 dark:text-gray-400">
+          <h2 className="prose mb-12 text-base text-gray-700 dark:text-gray-300 sm:mb-20 sm:text-lg">
             {`I’m trying to make sense of strategy, fintech, and how people work. Writing helps me think.`}
             {/* <Link
                       href={`/blog/strategy-is-not-x`}
@@ -47,7 +47,7 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div> */}
-        <div className="grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
@@ -56,16 +56,16 @@ export default function Home({ posts }) {
                 key={slug}
                 href={`/blog/${slug}`}
                 aria-label={`Read "${title}"`}
-                className="block cursor-pointer rounded-lg border border-gray-200 p-2 transition-all duration-200 hover:scale-[1.02] hover:bg-gray-50 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 dark:border-gray-700 dark:hover:bg-gray-800/40 sm:p-3"
+                className="block cursor-pointer rounded-lg bg-gray-50/50 p-5 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-gray-100/80 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 dark:bg-gray-800/30 dark:hover:bg-gray-800/50 sm:p-8"
               >
                 <article className="flex h-full flex-col">
                   <div className="flex-grow space-y-1 sm:space-y-1.5">
                     <div>
                       <div className="space-y-1.5">
-                        <h2 className="text-xl font-bold leading-7 tracking-tight text-gray-900 dark:text-gray-100">
+                        <h2 className="text-lg font-bold leading-6 tracking-tight text-gray-800 dark:text-gray-100 sm:text-xl sm:leading-7">
                           {title}
                         </h2>
-                        <div className="line-clamp-3 prose max-w-none text-sm text-gray-500 dark:text-gray-400">
+                        <div className="line-clamp-3 prose max-w-none text-[15px] text-gray-600 dark:text-gray-300 sm:text-sm">
                           {summary}
                         </div>
                         {/* <div className="flex flex-wrap items-center text-sm text-gray-500 dark:text-gray-400">
