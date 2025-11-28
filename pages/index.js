@@ -130,17 +130,8 @@ export default function Home({ posts }) {
           {posts.slice(0, MAX_DISPLAY).map((frontMatter, index) => {
             const { slug, date, title, summary, tags } = frontMatter
 
-            // First post is featured (larger) - only on tablet and up
-            const isFeatured = index === 0
-
             return (
-              <Link
-                key={slug}
-                href={`/blog/${slug}`}
-                className={`group relative block ${
-                  isFeatured ? 'md:col-span-2 lg:row-span-2' : ''
-                }`}
-              >
+              <Link key={slug} href={`/blog/${slug}`} className="group relative block">
                 <article className="flex h-full flex-col border-l-2 border-stone-200 py-5 pl-4 transition-all duration-300 hover:border-wine-600 active:border-wine-600 dark:border-stone-800 dark:hover:border-wine-400 dark:active:border-wine-400 sm:py-6 sm:pl-6">
                   {/* Date */}
                   <time className="mb-2 block font-mono text-[10px] uppercase tracking-wider text-stone-500 dark:text-stone-400 sm:mb-3 sm:text-xs sm:tracking-widest">
@@ -152,22 +143,12 @@ export default function Home({ posts }) {
                   </time>
 
                   {/* Title - better mobile sizing */}
-                  <h3
-                    className={`mb-2 font-serif font-bold leading-tight text-stone-900 transition-colors group-hover:text-wine-600 group-active:text-wine-600 dark:text-stone-50 dark:group-hover:text-wine-400 dark:group-active:text-wine-400 sm:mb-3 ${
-                      isFeatured
-                        ? 'text-2xl sm:text-3xl md:text-4xl'
-                        : 'text-xl sm:text-xl md:text-2xl'
-                    }`}
-                  >
+                  <h3 className="mb-2 font-serif text-xl font-bold leading-tight text-stone-900 transition-colors group-hover:text-wine-600 group-active:text-wine-600 dark:text-stone-50 dark:group-hover:text-wine-400 dark:group-active:text-wine-400 sm:mb-3 sm:text-xl md:text-2xl">
                     {title}
                   </h3>
 
                   {/* Summary - responsive text size */}
-                  <p
-                    className={`text-sm leading-relaxed text-stone-600 dark:text-stone-400 sm:text-base ${
-                      isFeatured ? 'mb-5 sm:mb-6 sm:text-lg' : 'mb-3 sm:mb-4'
-                    }`}
-                  >
+                  <p className="mb-3 text-sm leading-relaxed text-stone-600 dark:text-stone-400 sm:mb-4 sm:text-base">
                     {summary}
                   </p>
 
