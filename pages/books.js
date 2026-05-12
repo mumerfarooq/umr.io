@@ -1,30 +1,32 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import Link from '@/components/Link'
-import { currentBooks, recommendedBooks, backlogBooks } from '@/data/booksData'
+import { recommendedBooks } from '@/data/booksData'
 
 export default function Books() {
   return (
     <>
       <PageSEO title={`Books - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+      <div className="space-y-4 border border-stone-900 bg-yellow-50 p-6 dark:border-stone-200 dark:bg-stone-900 sm:p-8">
+        <h1 className="font-mono text-4xl font-bold leading-[1.05] tracking-[-0.03em] text-stone-900 dark:text-stone-50 sm:text-5xl">
           Bookshelf{' '}
           <span role="img" aria-label="books">
             📚
           </span>
         </h1>
-        <p className="ph-6 text-lg leading-7 text-gray-500 dark:text-gray-400">
-          I hope you will find something interesting.
+        <p className="text-base leading-8 text-stone-700 dark:text-stone-300 sm:text-lg">
+          A living list of books worth your time.
         </p>
-        <div className="ml-8">
-          <ul className="list-arabic space-y-1">
+        <div>
+          <ul className="space-y-2 border-t border-stone-300 pt-4 dark:border-stone-700">
             {recommendedBooks.map((d) => (
-              <li
-                key={d.title}
-                className="text-blue-600 visited:text-purple-600 hover:text-blue-800"
-              >
-                <Link href={d.href}>{d.title}</Link>
+              <li key={d.title}>
+                <Link
+                  href={d.href}
+                  className="text-stone-800 underline decoration-1 underline-offset-4 hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300"
+                >
+                  {d.title}
+                </Link>
               </li>
             ))}
           </ul>

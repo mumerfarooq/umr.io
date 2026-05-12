@@ -50,7 +50,7 @@ const LinkPreview = ({ href, children, ...props }) => {
         {...(isExternalUrl ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="text-primary-500 underline hover:text-primary-600 dark:hover:text-primary-400"
+        className="text-stone-800 underline decoration-1 underline-offset-4 hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300"
         {...props}
       >
         {children}
@@ -58,7 +58,7 @@ const LinkPreview = ({ href, children, ...props }) => {
 
       {showPreview && isExternalUrl && (preview || isLoading) && (
         <div
-          className="absolute z-50 mt-2 w-80 rounded-lg border border-gray-200 bg-white p-4 shadow-lg dark:border-gray-700 dark:bg-gray-800"
+          className="absolute z-50 mt-2 w-80 border border-stone-900 bg-yellow-50 p-4 shadow-lg dark:border-stone-200 dark:bg-stone-900"
           style={{
             borderColor: preview?.themeColor ? `${preview.themeColor}40` : undefined,
             borderLeftWidth: preview?.themeColor ? '4px' : undefined,
@@ -66,8 +66,8 @@ const LinkPreview = ({ href, children, ...props }) => {
         >
           {isLoading ? (
             <div className="flex items-center space-x-2">
-              <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary-500 border-t-transparent"></div>
-              <span className="text-sm text-gray-500">Loading preview...</span>
+              <div className="h-4 w-4 animate-spin rounded-full border-2 border-signal-500 border-t-transparent"></div>
+              <span className="text-sm text-stone-500 dark:text-stone-400">Loading preview...</span>
             </div>
           ) : preview ? (
             <div className="space-y-3">
@@ -93,17 +93,17 @@ const LinkPreview = ({ href, children, ...props }) => {
                       }}
                     />
                   )}
-                  <h3 className="line-clamp-2 text-sm font-semibold leading-tight text-gray-900 dark:text-gray-100">
+                  <h3 className="line-clamp-2 font-mono text-sm font-semibold leading-tight text-stone-900 dark:text-stone-100">
                     {preview.title}
                   </h3>
                 </div>
                 {preview.description && (
-                  <p className="line-clamp-3 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+                  <p className="line-clamp-3 text-xs leading-relaxed text-stone-700 dark:text-stone-300">
                     {preview.description}
                   </p>
                 )}
                 <div className="flex items-center justify-between">
-                  <p className="text-xs font-medium text-gray-500 dark:text-gray-500">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-stone-500 dark:text-stone-400">
                     {new URL(href).hostname}
                   </p>
                   {preview.themeColor && (

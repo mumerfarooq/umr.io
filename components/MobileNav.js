@@ -1,9 +1,13 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
+  const router = useRouter()
+  const isActiveLink = (href) =>
+    href.startsWith('/') && (router.pathname === href || router.pathname.startsWith(`${href}/`))
 
   const onToggleNav = () => {
     setNavShow((status) => {
@@ -21,7 +25,7 @@ const MobileNav = () => {
     <div className="sm:hidden">
       <button
         type="button"
-        className="ml-1 mr-1 h-10 w-10 rounded-full p-2 transition-colors hover:bg-stone-200 active:bg-stone-300 dark:hover:bg-stone-800 dark:active:bg-stone-700"
+        className="ml-1 mr-1 h-10 w-10 border border-stone-900 bg-yellow-50 p-2 transition-colors hover:bg-yellow-100 active:bg-yellow-200 dark:border-stone-200 dark:bg-stone-900 dark:hover:bg-stone-800 dark:active:bg-stone-700"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -39,14 +43,14 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-0 left-0 z-50 h-full w-full transform bg-stone-50 backdrop-blur-sm duration-300 ease-in-out dark:bg-stone-900 ${
+        className={`fixed top-0 left-0 z-50 h-full w-full transform bg-yellow-50 duration-300 ease-in-out dark:bg-stone-900 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex justify-end">
+        <div className="flex justify-end border-b border-stone-900 px-4 py-4 dark:border-stone-200">
           <button
             type="button"
-            className="mr-5 mt-11 h-10 w-10 rounded-full transition-colors hover:bg-stone-200 dark:hover:bg-stone-800"
+            className="h-10 w-10 border border-stone-900 transition-colors hover:bg-yellow-200 dark:border-stone-200 dark:hover:bg-stone-800"
             aria-label="Toggle Menu"
             onClick={onToggleNav}
           >
@@ -64,18 +68,22 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className="fixed mt-8 h-full w-full">
+        <nav className="fixed h-full w-full">
           {headerNavLinks.map((link) => (
             <div
               key={link.title}
-              className="border-b border-stone-200 px-8 py-6 dark:border-stone-800"
+              className="border-b border-stone-900 px-6 py-5 dark:border-stone-200"
             >
               <Link
                 href={link.href}
-                className="font-serif text-3xl font-bold tracking-tight text-stone-900 transition-colors hover:text-wine-600 dark:text-stone-100 dark:hover:text-wine-400"
+                className={`font-mono text-2xl font-bold uppercase tracking-[0.04em] transition-colors ${
+                  isActiveLink(link.href)
+                    ? 'text-signal-700 dark:text-signal-300'
+                    : 'text-stone-900 hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300'
+                }`}
                 onClick={onToggleNav}
               >
-                {link.title}
+                [{link.title}]
               </Link>
             </div>
           ))}

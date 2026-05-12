@@ -1,6 +1,5 @@
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
-import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
@@ -20,7 +19,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   const { slug, fileName, date, title, images, tags } = frontMatter
 
   return (
-    <SectionContainer>
+    <>
       <BlogSEO
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
@@ -28,13 +27,13 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       />
       <ScrollTopAndComment />
       <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 sm:pt-8 xl:pb-10">
+        <div className="xl:divide-y xl:divide-stone-900 xl:dark:divide-stone-200">
+          <header className="pt-2 sm:pt-4 xl:pb-8">
             <div className="space-y-1 text-center">
-              <dl className="space-y-10">
+              <dl className="space-y-4">
                 <div>
                   <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dd className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500 dark:text-stone-400">
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
@@ -46,10 +45,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </div>
             </div>
           </header>
-          <div
-            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
+          <div className="divide-y divide-stone-300 border border-stone-900 bg-yellow-50 pb-8 dark:divide-stone-700 dark:border-stone-200 dark:bg-stone-900">
             {/* <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
               <dt className="sr-only">Authors</dt>
               <dd>
@@ -85,8 +81,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </ul>
               </dd>
             </dl> */}
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-8 pb-8 dark:prose-dark sm:pt-12 sm:pb-10">
+            <div className="divide-y divide-stone-300 dark:divide-stone-700">
+              <div className="prose max-w-none px-5 pt-8 pb-8 dark:prose-dark sm:px-8 sm:pt-10 sm:pb-10">
                 {children}
               </div>
               {/* <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
@@ -98,14 +94,14 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </div>
               <Comments frontMatter={frontMatter} /> */}
             </div>
-            <footer>
-              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+            <footer className="px-5 pt-4 sm:px-8 sm:pt-5">
+              <div className="space-y-4 text-sm font-medium leading-6">
                 {tags && (
-                  <div className="py-4 xl:py-8">
-                    <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                  <div className="border-b border-stone-300 pb-3 dark:border-stone-700">
+                    <h2 className="font-mono text-xs uppercase tracking-[0.12em] text-stone-500 dark:text-stone-400">
                       Tags
                     </h2>
-                    <div className="flex flex-wrap">
+                    <div className="mt-3 flex flex-wrap gap-y-2">
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />
                       ))}
@@ -113,23 +109,23 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
                 {(next || prev) && (
-                  <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
+                  <div className={`grid grid-cols-1 gap-3 ${next && prev ? 'sm:grid-cols-2' : ''}`}>
                     {prev && (
                       <div>
-                        <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        <h2 className="font-mono text-xs uppercase tracking-[0.12em] text-stone-500 dark:text-stone-400">
                           Previous Article
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="pt-2 text-stone-800 hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
                     {next && (
-                      <div>
-                        <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      <div className={prev ? 'sm:text-right' : ''}>
+                        <h2 className="font-mono text-xs uppercase tracking-[0.12em] text-stone-500 dark:text-stone-400">
                           Next Article
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="pt-2 text-stone-800 hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
@@ -137,10 +133,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
-              <div className="pt-4 xl:pt-8">
+              <div className="pt-2">
                 <Link
                   href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  className="font-mono text-xs uppercase tracking-[0.12em] text-stone-800 hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300"
                 >
                   &larr; Back to the blog
                 </Link>
@@ -149,6 +145,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           </div>
         </div>
       </article>
-    </SectionContainer>
+    </>
   )
 }

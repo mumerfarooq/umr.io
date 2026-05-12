@@ -1,6 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --paper: #fefce8;
+    --ink: #0f0f0f;
+    --line: #262626;
+    --accent: #2563eb;
+  }
+
+  html {
+    background-color: var(--paper);
+    color: var(--ink);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-stone-900 antialiased dark:text-stone-100;
+    background-color: var(--paper);
+    overflow-x: hidden;
+  }
+
+  html.dark,
+  body.dark,
+  html.dark body {
+    background-color: #1c1917;
+  }
+
+  a {
+    @apply decoration-1 underline-offset-4 transition-colors;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: rgba(139, 38, 53, 0.2);
+    color: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 .task-list-item::before {
   @apply hidden;
@@ -16,6 +66,24 @@
 
 .csl-entry {
   @apply my-5;
+}
+
+@layer components {
+  .brutalist-surface {
+    @apply border border-stone-900 bg-yellow-50 dark:border-stone-200 dark:bg-stone-900;
+  }
+
+  .mono-label {
+    @apply font-mono text-[11px] uppercase tracking-[0.16em] text-stone-600 dark:text-stone-400;
+  }
+
+  .raw-link {
+    @apply font-mono text-[13px] uppercase tracking-[0.12em] text-stone-800 underline decoration-stone-600 transition-colors hover:text-signal-600 hover:decoration-signal-600 dark:text-stone-100 dark:decoration-stone-500 dark:hover:text-signal-300 dark:hover:decoration-signal-300;
+  }
+
+  .raw-link-wine {
+    @apply font-mono text-[13px] uppercase tracking-[0.12em] text-primary-700 underline decoration-primary-700 transition-colors hover:text-primary-600 hover:decoration-primary-600 dark:text-primary-300 dark:decoration-primary-300 dark:hover:text-primary-200 dark:hover:decoration-primary-200;
+  }
 }
 
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */

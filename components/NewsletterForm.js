@@ -36,7 +36,9 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
 
   return (
     <div>
-      <div className="pb-1 text-lg font-semibold text-gray-800 dark:text-gray-100">{title}</div>
+      <div className="pb-1 font-mono text-lg font-semibold uppercase tracking-[0.08em] text-stone-900 dark:text-stone-100">
+        {title}
+      </div>
       <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>
         <div>
           <label className="sr-only" htmlFor="email-input">
@@ -44,7 +46,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
           </label>
           <input
             autoComplete="email"
-            className="w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-black"
+            className="w-72 border border-stone-900 bg-yellow-100 px-4 py-2 text-sm text-stone-900 focus:border-signal-500 focus:outline-none focus:ring-2 focus:ring-signal-500 dark:border-stone-200 dark:bg-stone-900 dark:text-stone-100"
             id="email-input"
             name="email"
             placeholder={subscribed ? "You're subscribed !  🎉" : 'Enter your email'}
@@ -54,11 +56,13 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
             disabled={subscribed}
           />
         </div>
-        <div className="mt-2 flex w-full rounded-md shadow-sm sm:mt-0 sm:ml-3">
+        <div className="mt-2 flex w-full sm:ml-3 sm:mt-0">
           <button
-            className={`w-full rounded-md bg-primary-500 py-2 px-4 font-medium text-white sm:py-0 ${
-              subscribed ? 'cursor-default' : 'hover:bg-primary-700 dark:hover:bg-primary-400'
-            } focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 dark:ring-offset-black`}
+            className={`w-full border border-stone-900 bg-stone-900 px-4 py-2 font-mono text-xs uppercase tracking-[0.12em] text-stone-50 dark:border-stone-200 dark:bg-stone-100 dark:text-stone-900 ${
+              subscribed
+                ? 'cursor-default opacity-80'
+                : 'hover:bg-signal-600 hover:text-white dark:hover:bg-signal-300 dark:hover:text-stone-900'
+            } focus:outline-none focus:ring-2 focus:ring-signal-500 focus:ring-offset-2 dark:ring-offset-stone-900`}
             type="submit"
             disabled={subscribed}
           >
@@ -77,7 +81,7 @@ export default NewsletterForm
 
 export const BlogNewsletterForm = ({ title }) => (
   <div className="flex items-center justify-center">
-    <div className="bg-gray-100 p-6 dark:bg-gray-800 sm:px-14 sm:py-8">
+    <div className="border border-stone-900 bg-yellow-50 p-6 dark:border-stone-200 dark:bg-stone-900 sm:px-14 sm:py-8">
       <NewsletterForm title={title} />
     </div>
   </div>
