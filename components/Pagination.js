@@ -5,32 +5,25 @@ export default function Pagination({ totalPages, currentPage }) {
   const nextPage = parseInt(currentPage) + 1 <= parseInt(totalPages)
 
   return (
-    <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-      <nav className="flex justify-between">
-        {!prevPage && (
-          <button rel="previous" className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
-            Previous
-          </button>
-        )}
-        {prevPage && (
-          <Link href={currentPage - 1 === 1 ? `/blog/` : `/blog/page/${currentPage - 1}`}>
-            <button rel="previous">Previous</button>
-          </Link>
-        )}
-        <span>
-          {currentPage} of {totalPages}
-        </span>
-        {!nextPage && (
-          <button rel="next" className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
-            Next
-          </button>
-        )}
-        {nextPage && (
-          <Link href={`/blog/page/${currentPage + 1}`}>
-            <button rel="next">Next</button>
-          </Link>
-        )}
-      </nav>
-    </div>
+    <nav className="mt-12 flex items-baseline justify-between text-[1.05rem]">
+      {!prevPage && <span className="text-muted">Previous</span>}
+      {prevPage && (
+        <Link
+          href={currentPage - 1 === 1 ? `/blog/` : `/blog/page/${currentPage - 1}`}
+          className="quiet-link"
+        >
+          Previous
+        </Link>
+      )}
+      <span className="text-sm text-muted">
+        {currentPage} of {totalPages}
+      </span>
+      {!nextPage && <span className="text-muted">Next</span>}
+      {nextPage && (
+        <Link href={`/blog/page/${currentPage + 1}`} className="quiet-link">
+          Next
+        </Link>
+      )}
+    </nav>
   )
 }

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
+import siteMetadata from '@/data/siteMetadata'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -11,12 +12,7 @@ const MobileNav = () => {
 
   const onToggleNav = () => {
     setNavShow((status) => {
-      if (status) {
-        document.body.style.overflow = 'auto'
-      } else {
-        // Prevent scrolling
-        document.body.style.overflow = 'hidden'
-      }
+      document.body.style.overflow = status ? 'auto' : 'hidden'
       return !status
     })
   }
@@ -25,7 +21,7 @@ const MobileNav = () => {
     <div className="sm:hidden">
       <button
         type="button"
-        className="ml-1 mr-1 h-10 w-10 border border-stone-900 bg-yellow-50 p-2 transition-colors hover:bg-yellow-100 active:bg-yellow-200 dark:border-stone-200 dark:bg-stone-900 dark:hover:bg-stone-800 dark:active:bg-stone-700"
+        className="ml-1 flex h-9 w-9 items-center justify-center text-ink"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -33,7 +29,7 @@ const MobileNav = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="text-stone-900 dark:text-stone-100"
+          className="h-5 w-5"
         >
           <path
             fillRule="evenodd"
@@ -43,22 +39,23 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-0 left-0 z-50 h-full w-full transform bg-yellow-50 duration-300 ease-in-out dark:bg-stone-900 ${
+        className={`fixed inset-0 z-50 bg-paper transition-transform duration-300 ease-out ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex justify-end border-b border-stone-900 px-4 py-4 dark:border-stone-200">
+        <div className="flex items-center justify-between px-5 pt-8 pb-5">
+          <span className="text-lg text-ink">{siteMetadata.headerTitle}</span>
           <button
             type="button"
-            className="h-10 w-10 border border-stone-900 transition-colors hover:bg-yellow-200 dark:border-stone-200 dark:hover:bg-stone-800"
-            aria-label="Toggle Menu"
+            className="flex h-9 w-9 items-center justify-center text-ink"
+            aria-label="Close Menu"
             onClick={onToggleNav}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="text-stone-900 dark:text-stone-100"
+              className="h-5 w-5"
             >
               <path
                 fillRule="evenodd"
@@ -68,22 +65,17 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className="fixed h-full w-full">
+        <nav className="px-5 pt-8">
           {headerNavLinks.map((link) => (
-            <div
-              key={link.title}
-              className="border-b border-stone-900 px-6 py-5 dark:border-stone-200"
-            >
+            <div key={link.title} className="border-b border-rule py-5">
               <Link
                 href={link.href}
-                className={`font-mono text-2xl font-bold uppercase tracking-[0.04em] transition-colors ${
-                  isActiveLink(link.href)
-                    ? 'text-signal-700 dark:text-signal-300'
-                    : 'text-stone-900 hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300'
+                className={`text-2xl transition-colors ${
+                  isActiveLink(link.href) ? 'text-ink' : 'text-muted hover:text-ink'
                 }`}
                 onClick={onToggleNav}
               >
-                [{link.title}]
+                {link.title}
               </Link>
             </div>
           ))}

@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Home',
+  title: 'Umer Farooq',
   author: 'Umer Farooq',
-  headerTitle: 'Umer Farooq',
-  description: 'umr.io',
+  headerTitle: 'umr.io',
+  description: 'Notes on markets, incentives, and how products get built.',
   language: 'en-us',
   siteUrl: 'https://www.umr.io',
   theme: 'system', // system, dark or light

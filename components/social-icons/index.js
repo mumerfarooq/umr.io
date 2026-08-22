@@ -31,7 +31,7 @@ const SocialIcon = ({ kind, href, size = 8 }) => {
 
   return (
     <a
-      className="text-sm text-stone-700 transition hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300"
+      className="text-sm text-muted transition hover:text-accent"
       target="_blank"
       rel="noopener noreferrer"
       href={href}

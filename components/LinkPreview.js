@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const LinkPreview = ({ href, children, ...props }) => {
   const [preview, setPreview] = useState(null)
@@ -50,7 +50,7 @@ const LinkPreview = ({ href, children, ...props }) => {
         {...(isExternalUrl ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="text-stone-800 underline decoration-1 underline-offset-4 hover:text-signal-600 dark:text-stone-100 dark:hover:text-signal-300"
+        className="text-ink underline decoration-rule decoration-1 underline-offset-4 hover:text-accent hover:decoration-accent"
         {...props}
       >
         {children}
@@ -58,7 +58,7 @@ const LinkPreview = ({ href, children, ...props }) => {
 
       {showPreview && isExternalUrl && (preview || isLoading) && (
         <div
-          className="absolute z-50 mt-2 w-80 border border-stone-900 bg-yellow-50 p-4 shadow-lg dark:border-stone-200 dark:bg-stone-900"
+          className="absolute z-50 mt-2 w-80 border border-rule bg-paper p-4 shadow-lg"
           style={{
             borderColor: preview?.themeColor ? `${preview.themeColor}40` : undefined,
             borderLeftWidth: preview?.themeColor ? '4px' : undefined,
@@ -66,8 +66,8 @@ const LinkPreview = ({ href, children, ...props }) => {
         >
           {isLoading ? (
             <div className="flex items-center space-x-2">
-              <div className="h-4 w-4 animate-spin rounded-full border-2 border-signal-500 border-t-transparent"></div>
-              <span className="text-sm text-stone-500 dark:text-stone-400">Loading preview...</span>
+              <div className="h-4 w-4 animate-spin rounded-full border-2 border-accent border-t-transparent"></div>
+              <span className="text-sm text-muted">Loading preview...</span>
             </div>
           ) : preview ? (
             <div className="space-y-3">
@@ -93,19 +93,17 @@ const LinkPreview = ({ href, children, ...props }) => {
                       }}
                     />
                   )}
-                  <h3 className="line-clamp-2 font-mono text-sm font-semibold leading-tight text-stone-900 dark:text-stone-100">
+                  <h3 className="line-clamp-2 font-display text-sm font-medium italic leading-tight text-ink">
                     {preview.title}
                   </h3>
                 </div>
                 {preview.description && (
-                  <p className="line-clamp-3 text-xs leading-relaxed text-stone-700 dark:text-stone-300">
+                  <p className="line-clamp-3 text-xs leading-relaxed text-muted">
                     {preview.description}
                   </p>
                 )}
                 <div className="flex items-center justify-between">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-stone-500 dark:text-stone-400">
-                    {new URL(href).hostname}
-                  </p>
+                  <p className="meta">{new URL(href).hostname}</p>
                   {preview.themeColor && (
                     <div
                       className="h-2 w-2 rounded-full"

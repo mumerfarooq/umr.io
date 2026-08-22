@@ -1,7 +1,6 @@
 const headerNavLinks = [
-  { href: '/', title: 'Home' },
+  { href: '/blog', title: 'Writing' },
   { href: '/books', title: 'Bookshelf' },
-  { href: '/blog', title: 'Posts' },
   { href: 'https://shop.umr.io', title: 'Shop' },
 ]
 

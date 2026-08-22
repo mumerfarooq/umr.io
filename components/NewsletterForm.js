@@ -36,9 +36,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
 
   return (
     <div>
-      <div className="pb-1 font-mono text-lg font-semibold uppercase tracking-[0.08em] text-stone-900 dark:text-stone-100">
-        {title}
-      </div>
+      <div className="pb-2 text-xl text-ink">{title}</div>
       <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>
         <div>
           <label className="sr-only" htmlFor="email-input">
@@ -46,33 +44,29 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
           </label>
           <input
             autoComplete="email"
-            className="w-72 border border-stone-900 bg-yellow-100 px-4 py-2 text-sm text-stone-900 focus:border-signal-500 focus:outline-none focus:ring-2 focus:ring-signal-500 dark:border-stone-200 dark:bg-stone-900 dark:text-stone-100"
+            className="w-72 border-0 border-b border-rule bg-transparent px-0 py-2 text-sm text-ink placeholder:text-muted focus:border-accent focus:ring-0"
             id="email-input"
             name="email"
-            placeholder={subscribed ? "You're subscribed !  🎉" : 'Enter your email'}
+            placeholder={subscribed ? "You're subscribed" : 'Enter your email'}
             ref={inputEl}
             required
             type="email"
             disabled={subscribed}
           />
         </div>
-        <div className="mt-2 flex w-full sm:ml-3 sm:mt-0">
+        <div className="mt-3 flex w-full sm:ml-5 sm:mt-0">
           <button
-            className={`w-full border border-stone-900 bg-stone-900 px-4 py-2 font-mono text-xs uppercase tracking-[0.12em] text-stone-50 dark:border-stone-200 dark:bg-stone-100 dark:text-stone-900 ${
-              subscribed
-                ? 'cursor-default opacity-80'
-                : 'hover:bg-signal-600 hover:text-white dark:hover:bg-signal-300 dark:hover:text-stone-900'
-            } focus:outline-none focus:ring-2 focus:ring-signal-500 focus:ring-offset-2 dark:ring-offset-stone-900`}
+            className={`text-sm text-ink transition-colors ${
+              subscribed ? 'cursor-default text-muted' : 'hover:text-accent'
+            }`}
             type="submit"
             disabled={subscribed}
           >
-            {subscribed ? 'Thank you!' : 'Sign up'}
+            {subscribed ? 'Thank you' : 'Sign up →'}
           </button>
         </div>
       </form>
-      {error && (
-        <div className="w-72 pt-2 text-sm text-red-500 dark:text-red-400 sm:w-96">{message}</div>
-      )}
+      {error && <div className="w-72 pt-2 text-sm text-accent sm:w-96">{message}</div>}
     </div>
   )
 }
@@ -81,7 +75,7 @@ export default NewsletterForm
 
 export const BlogNewsletterForm = ({ title }) => (
   <div className="flex items-center justify-center">
-    <div className="border border-stone-900 bg-yellow-50 p-6 dark:border-stone-200 dark:bg-stone-900 sm:px-14 sm:py-8">
+    <div className="border-y border-rule py-8">
       <NewsletterForm title={title} />
     </div>
   </div>
